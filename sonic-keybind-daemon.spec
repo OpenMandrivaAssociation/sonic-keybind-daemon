@@ -35,11 +35,19 @@ BuildRequires: cmake(Qt6DBusTools)
 BuildRequires: doxygen
 BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
-BuildRequires: cmake(KF6KIO)
+
+# pending rename
+#BuildRequires: cmake(KF6KIO)
+BuildRequires: %{_lib}SonicFrameworksIO-devel
+
 BuildRequires: cmake(KF6Notifications)
 BuildRequires: cmake(KF6Service)
-BuildRequires: cmake(KF6WindowSystem)
 BuildRequires: cmake(KF6GlobalAccel)
+
+# pending rename
+# BuildRequires: cmake(KF6WindowSystem)
+BuildRequires: %{_lib}SonicFrameworksWindowSystem-devel
+
 BuildRequires: pkgconfig(x11-xcb)
 BuildRequires: pkgconfig(xcb)
 BuildRequires: pkgconfig(xcb-keysyms)

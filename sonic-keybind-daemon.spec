@@ -7,13 +7,13 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name: sonic-keybind-daemon
-Version: 6.6.3
+Version: 6.6.4
 Release: %{?git:0.%{git}.}1
 URL:     https://github.com/Sonic-DE/sonic-keybind-daemon
 # %if 0%{?git:1}
 # Source0: https://invent.kde.org/plasma/kglobalacceld/-/archive/%{gitbranch}/kglobalacceld-%{gitbranchd}.tar.bz2#/kglobalacceld-%{git}.tar.bz2
 # %else
-Source0: %url/archive/refs/tags/%version.tar.gz#/%name-version.tar.gz
+Source0: %url/archive/%version/%name-%version.tar.gz
 # %endif
 Summary: Daemon providing Global Keyboard Shortcut (Accelerator) functionality
 License: CC0-1.0 LGPL-2.0+ LGPL-2.1 LGPL-3.0

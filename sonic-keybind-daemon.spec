@@ -42,7 +42,10 @@ BuildRequires: %{_lib}SonicFrameworksIO-devel
 
 BuildRequires: cmake(KF6Notifications)
 BuildRequires: cmake(KF6Service)
-BuildRequires: cmake(KF6GlobalAccel)
+
+# pending rename
+# BuildRequires: cmake(KF6GlobalAccel)
+BuildRequires: %{_lib}SonicFrameworksKeybind-devel
 
 # pending rename
 # BuildRequires: cmake(KF6WindowSystem)

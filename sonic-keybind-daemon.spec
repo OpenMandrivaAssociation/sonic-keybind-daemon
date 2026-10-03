@@ -87,7 +87,6 @@ Development files (Headers etc.) for %{name}.
 Daemon providing Global Keyboard Shortcut (Accelerator) functionality
 
 %install -a
-rm -rf %{buildroot}/%{_libdir}/cmake
 
 %files
 %{_sysconfdir}/xdg/autostart/kglobalacceld.desktop
@@ -98,9 +97,7 @@ rm -rf %{buildroot}/%{_libdir}/cmake
 
 %files -n %{devname}
 %{_includedir}/KGlobalAccelD
-
-# pending rename
-# %{_libdir}/cmake/KGlobalAccelD
+%{_libdir}/cmake/KGlobalAccelD
 
 %files -n %{libname}
 %{_libdir}/libKGlobalAccelD.so*
